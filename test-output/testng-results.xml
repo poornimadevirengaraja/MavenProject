@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-13T09:08:13 AST" name="Suite" finished-at="2024-09-13T09:08:42 AST" duration-ms="28497">
+    <groups>
+    </groups>
+    <test started-at="2024-09-13T09:08:13 AST" name="Test" finished-at="2024-09-13T09:08:42 AST" duration-ms="28497">
+      <class name="HandlingWebelements.iframes">
+        <test-method signature="method1()[pri:0, instance:HandlingWebelements.iframes@5d7148e2]" started-at="2024-09-13T09:08:13 AST" name="method1" finished-at="2024-09-13T09:08:42 AST" duration-ms="28465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+      </class> <!-- HandlingWebelements.iframes -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
