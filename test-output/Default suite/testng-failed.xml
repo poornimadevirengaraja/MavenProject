@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.Hardassert">
+      <class name="TestNG.parameterstestng">
         <methods>
-          <include name="test2"/>
+          <include name="Test2"/>
+          <include name="Test1"/>
         </methods>
-      </class> <!-- TestNG.Hardassert -->
+      </class> <!-- TestNG.parameterstestng -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

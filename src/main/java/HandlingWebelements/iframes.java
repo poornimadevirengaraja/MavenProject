@@ -27,6 +27,7 @@ public class iframes {
 
 	        
 		driver.findElement(By.xpath("//button[text()='Try it']")).click();
+		driver.quit();
 	}
 
 }

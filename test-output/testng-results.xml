@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-13T09:08:13 AST" name="Suite" finished-at="2024-09-13T09:08:42 AST" duration-ms="28497">
+  <suite started-at="2024-09-16T06:12:06 AST" name="Default suite" finished-at="2024-09-16T06:12:09 AST" duration-ms="3227">
     <groups>
+      <group name="fita">
+        <method signature="includeexcludegroups.Test2()[pri:0, instance:TestNG.includeexcludegroups@3ce1e309]" name="Test2" class="TestNG.includeexcludegroups"/>
+        <method signature="includeexcludegroups.Test3()[pri:0, instance:TestNG.includeexcludegroups@3ce1e309]" name="Test3" class="TestNG.includeexcludegroups"/>
+      </group> <!-- fita -->
     </groups>
-    <test started-at="2024-09-13T09:08:13 AST" name="Test" finished-at="2024-09-13T09:08:42 AST" duration-ms="28497">
-      <class name="HandlingWebelements.iframes">
-        <test-method signature="method1()[pri:0, instance:HandlingWebelements.iframes@5d7148e2]" started-at="2024-09-13T09:08:13 AST" name="method1" finished-at="2024-09-13T09:08:42 AST" duration-ms="28465" status="PASS">
+    <test started-at="2024-09-16T06:12:06 AST" name="Default test" finished-at="2024-09-16T06:12:09 AST" duration-ms="3227">
+      <class name="TestNG.includeexcludegroups">
+        <test-method signature="Test2()[pri:0, instance:TestNG.includeexcludegroups@3ce1e309]" started-at="2024-09-16T06:12:06 AST" name="Test2" finished-at="2024-09-16T06:12:09 AST" duration-ms="3195" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method1 -->
-      </class> <!-- HandlingWebelements.iframes -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Test2 -->
+        <test-method signature="Test3()[pri:0, instance:TestNG.includeexcludegroups@3ce1e309]" started-at="2024-09-16T06:12:09 AST" name="Test3" finished-at="2024-09-16T06:12:09 AST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+      </class> <!-- TestNG.includeexcludegroups -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

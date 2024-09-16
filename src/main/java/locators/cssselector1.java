@@ -18,7 +18,7 @@ Tag and ID  -> input#email -> here # means id
 Tag and class  -> input.inputtext  -> here dot means class
 Tag and attribute ->  input[type='text']  -> no need to use double slash before input or @ sign before the attribute type
 Tag, class, and attribute  -> input.inputtext[type='text']
-Inner text ->  font:contains(“Boston”)  
+Inner text ->  font:contains
 
 Demo site:
 ==========
@@ -35,6 +35,7 @@ public class cssselector1 {
 		dr.findElement(By.cssSelector("input#email")).sendKeys("poornimadevi@gmail.com");
 		dr.findElement(By.cssSelector("input.inputtext[tabindex='2']")).sendKeys("123456");
 		dr.findElement(By.cssSelector("input[value='Log In']")).click();
+		dr.quit();
 		
 	}
 

@@ -3,11 +3,31 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="HandlingWebelements.iframes">
+      <class name="TestNG.Testannotations2">
         <methods>
-          <include name="method1"/>
+          <include name="test1"/>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="test4"/>
         </methods>
-      </class> <!-- HandlingWebelements.iframes -->
+      </class> <!-- TestNG.Testannotations2 -->
+      <class name="TestNG.Hardassert">
+        <methods>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- TestNG.Hardassert -->
+      <class name="TestNG.softassertion">
+        <methods>
+          <include name="test1"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- TestNG.softassertion -->
+      <class name="TestNG.parameterstestng">
+        <methods>
+          <include name="Test2"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- TestNG.parameterstestng -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
