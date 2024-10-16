@@ -14,7 +14,7 @@ only forward you can move but faster than xpath
 mostly xpath is used because if any value changes it will not work 
 syntax :
 ========
-Tag and ID  -> input#email -> here # means id
+Tag and ID  -> input#email -> here # means id tagname#email
 Tag and class  -> input.inputtext  -> here dot means class
 Tag and attribute ->  input[type='text']  -> no need to use double slash before input or @ sign before the attribute type
 Tag, class, and attribute  -> input.inputtext[type='text']

@@ -27,13 +27,13 @@ public class xpathparameterize1 {
 		
 		//parameterize the attribute name and attribute values
 		//different username tried for the same username field
-		method1("user-name","standard_user");		
+		xpathparameterize1.method1("user-name","standard_user");		
 		
-		method1("user-name","locked_out_user");	
+		xpathparameterize1.method1("user-name","locked_out_user");	
 				
-		method1("user-name","problem_user");
+		xpathparameterize1.method1("user-name","problem_user");
 		
-		method1("user-name","performance_glitch_user");
+		xpathparameterize1.method1("user-name","performance_glitch_user");
 
 		
 	}

@@ -6,7 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-	static WebDriver  driver;
+	 static WebDriver  driver;
+	
 	public static void chromeopen() throws InterruptedException {
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver();
@@ -16,3 +17,11 @@ public class BaseClass {
 
 }
 }
+
+//driver manage maximize and options interface in selenium
+/*
+* driver. manage() is a method that returns instance of options interface, now
+* the options interface has method window() that returns instance of window
+* interface, this window interface has method maximize() which maximizes the
+* window.
+*/

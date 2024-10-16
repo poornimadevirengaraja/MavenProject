@@ -34,6 +34,7 @@ public class TakescreenshotWebDriver {
 		driver.get("http://demo.guru99.com/test/newtours/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		
 		TakesScreenshot ts = (TakesScreenshot)driver;		
 		File srcfile=ts.getScreenshotAs(OutputType.FILE);
 		File destfile=new File(".\\Screenshots\\"+dateFormat.format(date)+".png");

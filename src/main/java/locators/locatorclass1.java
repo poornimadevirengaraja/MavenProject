@@ -32,9 +32,9 @@ public class locatorclass1 {
 		
 		// This will get the collection of all window in the sequential order
 		Set<String> windowid=dr.getWindowHandles();
-		for(String wid: windowid) {
-			dr.switchTo().window(wid);
-			if(dr.getTitle().equals("Sauce Labs | Accounts")) {
+		for(String wid: windowid) {// looping through all windows using window id
+			dr.switchTo().window(wid); // swithto window id
+			if(dr.getTitle().equals("Sauce Labs | Accounts")) { // get tite of window and matching
 				System.out.println(dr.getCurrentUrl());
 				Thread.sleep(2000);	
 				dr.findElement(By.name("callback_0")).sendKeys("standard_user");
@@ -44,6 +44,12 @@ public class locatorclass1 {
 				
 			};
 		}
+		
+		
+	
+		
+		
+		
 				
 	
 		

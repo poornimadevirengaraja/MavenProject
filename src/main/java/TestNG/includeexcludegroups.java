@@ -32,6 +32,11 @@ public class includeexcludegroups {
 	System.out.println("Test3");	
 	}
 	
+	@Test(groups="Regression")
+	public void Test5() {
+	System.out.println("Test5");	
+	}
+	
 	@AfterGroups(groups="fita")
 	public void Test4() {
 	System.out.println("Test4");

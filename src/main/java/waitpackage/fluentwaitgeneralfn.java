@@ -23,8 +23,7 @@ public class fluentwaitgeneralfn {
 		driver.findElement(By.xpath("//textarea[@name='q']")).sendKeys("selenum");
 		driver.findElement(By.xpath("//textarea[@name='q']")).sendKeys(Keys.RETURN);
 		
-		//locator
-		
+		//locator		
 		By flocator=By.xpath("(//div//span[text()='Selenium'])[1]");
 		fnfluentwaitelement(driver,flocator).click();
 		
@@ -38,6 +37,11 @@ public class fluentwaitgeneralfn {
 		
 		WebElement element = fwait.until(WebDriver ->driver.findElement(locator));	
 		return element;
+		
 	}
 
+
 }
+
+
+

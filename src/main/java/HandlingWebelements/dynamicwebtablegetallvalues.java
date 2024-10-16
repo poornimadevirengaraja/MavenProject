@@ -18,7 +18,9 @@ public static void main(String[] args) {
 	driver.manage().window().maximize();
 	
 	// Find the total number of rows in this webtable
-	List<WebElement> elements = driver.findElements(By.xpath("/html/body/table/tbody/tr"));
+	
+	List<WebElement> elements = driver.findElements(By.xpath("//table//tbody//tr"));
+	//List<WebElement> elements = driver.findElements(By.xpath("/html/body/table/tbody/tr"));
 	int rowsize = elements.size();
 	System.out.println("Total Table Rows size ="+rowsize);
 	
@@ -26,14 +28,14 @@ public static void main(String[] args) {
 	// then read the values of all columns in each row
 	
 	for(int i=1;i<=rowsize;i++) {
-		
-		List<WebElement> elements2 = driver.findElements(By.xpath("/html/body/table/tbody/tr["+i+"]/td"));
+		List<WebElement> elements2 = driver.findElements(By.xpath("//table//tbody//tr["+i+"]//td"));
+		//List<WebElement> elements2 = driver.findElements(By.xpath("/html/body/table/tbody/tr["+i+"]/td"));
 		int colsize = elements2.size();
 		System.out.println("Row No "+ i+" & Column size ="+ colsize);
 		
 		for (int j=1;j<=colsize;j++) {
 			
-			WebElement element = driver.findElement(By.xpath("/html/body/table/tbody/tr["+i+"]/td["+j+"]"));
+			WebElement element = driver.findElement(By.xpath("//table//tbody//tr["+i+"]//td["+j+"]"));
 			System.out.println("Row ="+i+" Column ="+j+" Value ="+element.getText());
 		
 			

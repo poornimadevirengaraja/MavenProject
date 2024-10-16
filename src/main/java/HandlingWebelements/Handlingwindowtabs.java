@@ -29,13 +29,13 @@ public class Handlingwindowtabs {
 		driver.findElement(By.linkText("Click Here")).click();
 		Thread.sleep(2000);
 		
-		//using ArrayList
 		/*
-		 * ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-		 * driver.switchTo().window(tabs.get(0));//parent window Thread.sleep(3000);
-		 * driver.switchTo().window(tabs.get(1));//child window Thread.sleep(3000);
+		 * //using ArrayList ArrayList<String> tabs = new
+		 * ArrayList<>(driver.getWindowHandles());
+		 * driver.switchTo().window(tabs.get(0)); //parent window Thread.sleep(3000);
+		 * driver.switchTo().window(tabs.get(1)); //child window Thread.sleep(3000);
 		 * driver.close(); // closes the current tab of child window
-		 */
+		 */		 
 		
 		
 		//using List
@@ -50,8 +50,8 @@ public class Handlingwindowtabs {
 		//using Set
 		String parentwindowid = driver.getWindowHandle();// parent window
 		System.out.println(parentwindowid);
-		Set<String> allwindowHandles = driver.getWindowHandles(); //all window handles
 		
+		Set<String> allwindowHandles = driver.getWindowHandles(); //all window handles		
 		for( String handle :allwindowHandles) {
 			if(!parentwindowid.equals(handle)){
 			 	System.out.println(handle);

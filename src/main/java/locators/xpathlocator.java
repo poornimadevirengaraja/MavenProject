@@ -9,23 +9,22 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class xpathlocator {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
-		WebDriver dr=new ChromeDriver();
+		WebDriver dr = new ChromeDriver();
 		dr.get("https://www.saucedemo.com/");
 		dr.manage().window().maximize();
 		Thread.sleep(1000);
-
 		/*
-		 * //Basic Xpath - XPath expression select nodes or list of nodes on the basis
-		 * of attributes like ID , Name, Classname, etc.
+		 * // Basic Xpath - XPath expression select nodes or list of nodes on the basis
+		 * // of attributes like ID , Name, Classname, etc.
 		 * dr.findElement(By.xpath("//input[@id='user-name']")).sendKeys("standard_user"
 		 * );
 		 * dr.findElement(By.xpath("//input[@name='password']")).sendKeys("secret_sauce"
 		 * ); dr.findElement(By.xpath("//input[@id='login-button']")).click();
-		 */
-
-		/*
+		 * 
+		 * 
 		 * //Contains - It is used when the value of any attribute changes dynamically.
-		 * It has an ability to find the element with partial text.
+		 * //It has an ability to find the element with partial text. comma to be used a
+		 * seperator here
 		 * 
 		 * dr.findElement(By.xpath("//input[starts-with(@id,'user')]")).sendKeys(
 		 * "standard_user");
@@ -34,11 +33,12 @@ public class xpathlocator {
 		 * dr.findElement(By.xpath("//input[contains(@id,'login')]")).click();
 		 * Thread.sleep(1000);
 		 * dr.findElement(By.xpath("//button[contains(@id,'menu-btn')]")).click();
-		 * //contains and text() method to read text() or link text //a or paragraph
-		 * text //p Thread.sleep(2000);
-		 * dr.findElement(By.xpath("//a[contains(text(),'About')]")).click();
-		 * Thread.sleep(2000);
-		 * dr.findElement(By.xpath("//button[contains(text(),'Sign in')]")).click();
+		 * //contains and text() method to read text() or link text //a or paragraphtext
+		 * //p Thread.sleep(2000);
+		 * dr.findElement(By.xpath("//a[contains(text(),'About')]")).click(); // link
+		 * you need to use text() Thread.sleep(2000);
+		 * dr.findElement(By.xpath("//button[contains(text(),'Sign in')]")).click();//
+		 * button need to use text() if it has text in it
 		 */
 
 		/*
@@ -49,14 +49,14 @@ public class xpathlocator {
 		 * sendKeys("secret_sauce");
 		 * dr.findElement(By.xpath("//input[contains(@id,'login')]")).click();
 		 */
-		
-		
-		// If the name and id are dynamically changing elements then how will you automate? Then you have to use the tagname only here input which will not change and take by index
+
+		// If the name and id are dynamically changing elements then how will you
+		// automate? Then you have to use the tagname only here input which will not
+		// change and take by index
 		dr.findElement(By.xpath("(//div[@class='form_group']//input[1])[1]")).sendKeys("standard_user");
 		dr.findElement(By.xpath("(//div[@class='form_group']//input[1])[2]")).sendKeys("secret_sauce");
 		dr.findElement(By.xpath("//input[contains(@id,'login')]")).click();
-		
-		
+
 		Thread.sleep(3000);
 		dr.quit(); // Quit the browser - It close entire browser
 		// dr.close(); //Close the browser - It close the tab not entire browser
@@ -77,7 +77,8 @@ public class xpathlocator {
  * Types of xpath: =============== 1) Absolute xpath - It is the direct way of
  * finding the element from root node. If there any changes made in the path of
  * the element then xpath fails. Begins with (/).
- * /html/body/div[1]/div/div/div/div/div/div/div/div/div/div/div/div/header/div[1]/a/img
+ * /html/body/div[1]/div/div/div/div/div/div/div/div/div/div/div/div/header/div[
+ * 1]/a/img
  * 
  * 2) Relative xpath - It starts with middle of DOM structure. Begins with (//).
  * It is always preferred.

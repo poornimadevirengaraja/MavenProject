@@ -14,7 +14,6 @@ import org.testng.annotations.AfterTest;
 
 
 public class Testannotations2 {
-
 	
 	@Test(groups="cycle1",invocationCount=2) // this will run this method twice
 	public void test1() {

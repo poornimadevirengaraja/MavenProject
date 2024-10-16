@@ -41,6 +41,7 @@ public class getalllinks {
 		for(int i=0;i<=elements.size()-1;i++) {
 			String linkname=elements.get(i).getText();
 			System.out.println(i+ "-" +linkname);
+	
 		}
 		
 		

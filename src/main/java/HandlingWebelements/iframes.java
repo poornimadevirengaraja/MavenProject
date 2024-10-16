@@ -8,7 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-
+// driver.switchTo().frame(webeleme);
+//driver.switchTo().frame(index);
 public class iframes {
 	@Test
 	public static void method1(){
@@ -24,7 +25,6 @@ public class iframes {
 		//driver.switchTo().frame("iframeResult");
 		//or
 	    driver.switchTo().frame(1);   //index starts from 0 so second frame is 1
-
 	        
 		driver.findElement(By.xpath("//button[text()='Try it']")).click();
 		driver.quit();

@@ -2,9 +2,8 @@ package TestNG;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 
 public class Hardassert {
 
@@ -16,10 +15,8 @@ public class Hardassert {
 	public void test1() {
 		
 		System.out.println("Test1");
-		assertTrue(name.equals("poornimadevi"));
-		
-		
-		
+		Assert.assertTrue(name.equals("poornimadevi"));
+
 		//if you are not using this statement "sa.assertAll();"  then all the test1, test2, test3 will show Pass only.
 		//if you are using this statement "sa.assertAll();" then only it will show which ever tests get failed and which ever test get pass.
 	}
@@ -28,7 +25,7 @@ public class Hardassert {
 	public void test2() {			
 		System.out.println("Test2");
 		//assertEquals("ABC", "ABC");
-		assertEquals("abc", "ABC");
+		Assert.assertEquals("abc", "ABC");
 		System.out.println("Test2 statement after failure");// it will not print this statement if the above assert equals statement fails.
 		
 	}
@@ -37,7 +34,7 @@ public class Hardassert {
 	@Test(priority=3)
 	public void test3() {	
 		System.out.println("Test3");
-		assertEquals("monday", "monday");
+		Assert.assertEquals("monday", "monday");
 		
 	}
 }

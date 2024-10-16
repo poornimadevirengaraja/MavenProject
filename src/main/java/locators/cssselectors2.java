@@ -10,8 +10,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  * ============
  * :first-child
  * :last-child
- * :nth-child
- * :nth-last-child
+ * :nth-child(index)
+ * :nth-last-child(index)
  * 
  * Based on type or tag selected
  * ==============================

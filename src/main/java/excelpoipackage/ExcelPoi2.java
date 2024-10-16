@@ -3,10 +3,13 @@ package excelpoipackage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+
+/*
+ * Add dependencies in pom.xml - poi and poi-ooxml
+ */
 
 public class ExcelPoi2 {
 	public static void main(String[] args) throws IOException {	

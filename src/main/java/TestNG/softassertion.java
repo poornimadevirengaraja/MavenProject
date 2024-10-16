@@ -1,5 +1,6 @@
 package TestNG;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -13,8 +14,8 @@ public class softassertion {
 		System.out.println("Test1");
 		sa.assertTrue(name.equals("poornimadevi"));
 		sa.assertEquals("fita", "FITA1");
-		sa.assertTrue(name.equals("Poornimadevi"));
-		sa.assertEquals("FITA1", "FITA1");
+		sa.assertTrue(name.equals("Poornimadvi"));
+		sa.assertEquals("FITA1", "FITA");
 		sa.assertAll(); 
 		
 		//if you are not using this statement "sa.assertAll();"  then all the test1, test2, test3 will show Pass only.

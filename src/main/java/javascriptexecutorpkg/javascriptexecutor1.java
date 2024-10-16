@@ -12,11 +12,22 @@ import org.openqa.selenium.WebElement;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /*JavaScriptExecutor is an Interface that helps to execute JavaScript through Selenium Webdriver. 
- * JavaScriptExecutor provides two methods ‚Äúexecutescript‚Äù & ‚ÄúexecuteAsyncScript‚Äù to run javascript on the selected window or current page.
+ * JavaScriptExecutor provides two methods executescript& executeAsyncScript to run javascript on the selected window or current page.
  In case, these locators do not work you can use JavaScriptExecutor. You can use JavaScriptExecutor to perform an desired operation on a web element.
 
 Selenium supports javaScriptExecutor. There is no need for an extra plugin or add-on.
  You just need to import (org.openqa.selenium.JavascriptExecutor) in the script as to use JavaScriptExecutor.
+ 
+ *In case, these locators do not work you can use JavaScriptExecutor. You can use JavaScriptExecutor to perform an desired operation on a web element.
+
+Selenium supports javaScriptExecutor. There is no need for an extra plugin or add-on. You just need to import (org.openqa.selenium.JavascriptExecutor) in the script as to use JavaScriptExecutor.
+
+JavascriptExecutor js = (JavascriptExecutor) driver;  
+js.executeScript(Script,Arguments);
+
+Script ñ This is the JavaScript that needs to execute.
+Arguments ñ It is the arguments to the script. Itís optional.
+ *
  */
 
 
@@ -35,6 +46,8 @@ public class javascriptexecutor1 {
 		JavascriptExecutor jse=(JavascriptExecutor)driver;
 		jse.executeScript("arguments[0].click();", t);     // click on webelement
 
+		// To generate Alert window using JavascriptExecutor. Display the alert message 
+		jse.executeScript("alert('Welcome to Guru99');");  
 	}
 
 }

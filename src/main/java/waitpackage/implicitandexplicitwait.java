@@ -16,7 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 /*
 why to use wait statements ?
 When a web page loads on a browser, various web elements (buttons, links, images) that someone wants to interact with may load at various intervals.
-In automated testing, this causes some trouble when identifying certain elements. If an element is not located, then the “ElementNotVisibleException” appears. 
+In automated testing, this causes some trouble when identifying certain elements. If an element is not located, then the “ElementNotVisibleException appears. 
 selenium Wait commands help resolve this issue.
 
 1)Implicit Wait
@@ -41,14 +41,17 @@ public class implicitandexplicitwait {
 		//It should be given only once after the driver is initiated in a script
 		//this wait is applicable for all elements in this script
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.findElement(By.xpath("//textarea[@name='q']")).sendKeys("selenum");
+		driver.findElement(By.xpath("//textarea[@name='q']")).sendKeys("selenium");
 		driver.findElement(By.xpath("//textarea[@name='q']")).sendKeys(Keys.RETURN);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		//Explicit Wait
 		//WebDriverWait
-		WebDriverWait ewait=new WebDriverWait(driver,Duration.ofSeconds(20));
+		
 		//here ExpectedConditions is a class with various method
 		//It will check for the locator visibility of element in the page and if it is visible the it will become true and web element will be returned as output 
+		
+		WebDriverWait ewait=new WebDriverWait(driver,Duration.ofSeconds(20));		
 		WebElement element = ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div//span[text()='Selenium'])[1]")));
 		element.click();
 		
@@ -59,9 +62,8 @@ public class implicitandexplicitwait {
 		 * elementToBeSelected()
 		 */
 		
-		
-		
 	
 	}
+
 
 }

@@ -20,7 +20,7 @@ public class xpathparameterize2 {
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-		xpathparameterize2 refdr=new xpathparameterize2();// object for class is created here so that you can use this object to refer all the webdrivers used in main method as webdriver is declared globally.
+		xpathparameterize2 refdr=new xpathparameterize2(); // object for class is created here so that you can use this object to refer all the webdrivers used in main method as webdriver is declared globally.
 		
 		WebDriverManager.chromedriver().setup();
 		refdr.dr=new ChromeDriver();

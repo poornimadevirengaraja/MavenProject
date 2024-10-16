@@ -26,7 +26,7 @@ public class Fluentwaitclass {
 		driver.manage().window().maximize();
 		
 		//we are declaring a fluent wait with the timeout of 30 seconds and the frequency is set to 5 seconds by ignoring “NoSuchElementException“
-		// Here Wait<WebDriver> is interface and FluentWait<>class
+		// Here Wait<WebDriver> here is interface and FluentWait<>class
 		// Thus this means that it will check for the element on the web page at every 5 seconds for the maximum time of 30 seconds. If the element is located within this time frame it will perform the operations else it will throw an “ElementNotVisibleException“
 		Wait<WebDriver> fwait=new FluentWait<WebDriver>(driver)
 				.withTimeout(Duration.ofSeconds(30)) //methods - total time out is 30 seconds

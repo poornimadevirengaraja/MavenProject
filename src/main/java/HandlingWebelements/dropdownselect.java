@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
+//Select s=new Select(webele);
 /*
  * dropdown can be selected by creating a object reference for select 
  * 3 ways:
@@ -43,7 +43,9 @@ public class dropdownselect {
 		  ref.selectByVisibleText("Option1");
 		  Thread.sleep(1000); 
 		 
-		
+
+		  
+		  
 
 /*
 If there is no select tag then how will you click on the webelement? interview question

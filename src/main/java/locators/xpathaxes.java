@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class xpahaxes {
+public class xpathaxes {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver dr=new ChromeDriver();
@@ -18,17 +18,15 @@ public class xpahaxes {
 		dr.manage().window().maximize();
 		Thread.sleep(1000);
 		
-		/*
-		 * //child and following axes method
-		 * dr.findElement(By.xpath("(//*[@class='form_group']//child::input)[1]")).
-		 * sendKeys("standard_user"); // any node of class='form_group' as parent and
-		 * its immediate child of index 1 of 2
-		 * dr.findElement(By.xpath("(//*[@class='form_group']//child::input)[2]")).
-		 * sendKeys("secret_sauce"); // any node of class='form_group' as parent and its
-		 * immediate child of index 2 of 2
-		 * dr.findElement(By.xpath("//*[@class='form_group']//following::input[2]")).
-		 * click(); // any node of class Thread.sleep(1000);
-		 */
+		
+		  //child and following axes method
+		  dr.findElement(By.xpath("(//*[@class='form_group']//child::input)[1]")).
+		  sendKeys("standard_user"); // any node of class='form_group' as parent and its immediate child of index 1 of 2
+		  dr.findElement(By.xpath("(//*[@class='form_group']//child::input)[2]")).
+		  sendKeys("secret_sauce"); // any node of class='form_group' as parent and its immediate child of index 2 of 2
+		  dr.findElement(By.xpath("//*[@class='form_group']//following::input[2]")).
+		  click(); // any node of class Thread.sleep(1000);
+		 
 		
 		//preceding axes method
 		dr.findElement(By.xpath("(//*[@type='submit']//preceding::input)[1]")).sendKeys("standard_user"); // any node of type='submit' as parent and its previous nodes of input tag of index 1 of 2 
@@ -91,10 +89,10 @@ public class xpahaxes {
 
 }
 
-/* 
-//*[@class='form_group']//following::input[2] - It will go to one node following to similar node name @class='form_group'
-//*[@class='form_group']//child::input[2] - It will go to one node next inside to parent node @class='form_group' which is child node
-(//*[@class='form_group'])//following::input[2]
+/*
+ * //*[@class='form_group']//following::input[2] - It will go to one node
+ * following to similar node name @class='form_group'
+ * //*[@class='form_group']//child::input[2] - It will go to one node next
+ * inside to parent node @class='form_group' which is child node
+ * (//*[@class='form_group'])//following::input[2]
  */
-
-

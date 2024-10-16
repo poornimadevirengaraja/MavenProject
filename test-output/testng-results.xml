@@ -1,25 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-16T06:12:06 AST" name="Default suite" finished-at="2024-09-16T06:12:09 AST" duration-ms="3227">
+  <suite started-at="2024-10-16T18:11:05 GST" name="Default suite" finished-at="2024-10-16T18:11:07 GST" duration-ms="1996">
     <groups>
-      <group name="fita">
-        <method signature="includeexcludegroups.Test2()[pri:0, instance:TestNG.includeexcludegroups@3ce1e309]" name="Test2" class="TestNG.includeexcludegroups"/>
-        <method signature="includeexcludegroups.Test3()[pri:0, instance:TestNG.includeexcludegroups@3ce1e309]" name="Test3" class="TestNG.includeexcludegroups"/>
-      </group> <!-- fita -->
     </groups>
-    <test started-at="2024-09-16T06:12:06 AST" name="Default test" finished-at="2024-09-16T06:12:09 AST" duration-ms="3227">
-      <class name="TestNG.includeexcludegroups">
-        <test-method signature="Test2()[pri:0, instance:TestNG.includeexcludegroups@3ce1e309]" started-at="2024-09-16T06:12:06 AST" name="Test2" finished-at="2024-09-16T06:12:09 AST" duration-ms="3195" status="PASS">
+    <test started-at="2024-10-16T18:11:05 GST" name="Default test" finished-at="2024-10-16T18:11:07 GST" duration-ms="1996">
+      <class name="crossbrowserremotedriver.Internetexplorer_Remotedriver">
+        <test-method signature="InternetExplorerremotedriver()[pri:0, instance:crossbrowserremotedriver.Internetexplorer_Remotedriver@3a44431a]" started-at="2024-10-16T18:11:05 GST" name="InternetExplorerremotedriver" finished-at="2024-10-16T18:11:07 GST" duration-ms="1966" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. 
+Host info: host: 'LAPTOP-VKBHV4LJ', ip: '192.168.1.72'
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.22.0', revision: 'c5f3146703'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: internet explorer, platformName: Windows 11, se:ieOptions: {}}]}]
+Capabilities {browserName: internet explorer, platformName: Windows 11, se:ieOptions: {}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. 
+Host info: host: 'LAPTOP-VKBHV4LJ', ip: '192.168.1.72'
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+Build info: version: '4.22.0', revision: 'c5f3146703'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: internet explorer, platformName: Windows 11, se:ieOptions: {}}]}]
+Capabilities {browserName: internet explorer, platformName: Windows 11, se:ieOptions: {}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at crossbrowserremotedriver.Internetexplorer_Remotedriver.InternetExplorerremotedriver(Internetexplorer_Remotedriver.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method signature="Test3()[pri:0, instance:TestNG.includeexcludegroups@3ce1e309]" started-at="2024-09-16T06:12:09 AST" name="Test3" finished-at="2024-09-16T06:12:09 AST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-      </class> <!-- TestNG.includeexcludegroups -->
+        </test-method> <!-- InternetExplorerremotedriver -->
+      </class> <!-- crossbrowserremotedriver.Internetexplorer_Remotedriver -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

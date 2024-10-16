@@ -5,6 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+/* .isselected
+ * .isdisplayed
+ * .isenabled
+ * 
+ * It returns boolean true or false
+ */
 public class radiobuttonandcheckbox {
 	public static void main(String[] args) throws InterruptedException {
 	
@@ -16,7 +22,7 @@ public class radiobuttonandcheckbox {
 			//radio button click
 			driver.findElement(By.xpath("(//input[@name=\"radioButton\"])[1]")).click();
 			Thread.sleep(1000);
-			
+					
 			//isdisplayed
 			boolean radioisdisp=driver.findElement(By.xpath("(//input[@name=\"radioButton\"])[1]")).isDisplayed();
 			System.out.println(radioisdisp);

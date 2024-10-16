@@ -25,13 +25,14 @@ public class explicitwaitgeneralfn {
 		// locator and its will return by
 		By elocator = By.xpath("(//div//span[text()='Selenium'])[1]"); // return type is By
 		waitforElementfn(driver, elocator, 20).click(); // function call with 3 arguments
-	}
 
+	}
 	
+
+
 	// This function can be used for many locators of web element
 	// Create a reusable function waitforElementfn with 3 parameters driver, locator and timeout
 	private static WebElement waitforElementfn(WebDriver driver, By locator, int timeout) {
-
 		WebDriverWait ewait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 		WebElement element = ewait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		return element;
